@@ -132,4 +132,44 @@ function print() {
 
 ```
 
-## Build out Fetch focus on Testing
+## Testing with Jest and Using Mocks
+- Mocking of Node Modules
+- Mocking is the faking of dependency, to only test the software we've written.
+- when we run this program normally: `node index.js -u localhost -m get`
+- when we test we only run: `jest --verbose -coverage`
+- jest.mock('minimist'): specify some implementation that will 'fake' the libraries use case
+- jest.spyOn(global.console, 'log'): specifies an object with a method that we want some information about.
+- jest uses 3 functions to run tests: describe(), it(), expect()
+  - describe groups tests
+  - it runs a single test
+  - expect makes an assertiong about some data.
+
+```js
+// input.test.js
+
+// this modules uses process.argv and minimist
+jest.mock('minimist');
+
+const minimist = require('minimist');
+minimist.mockImplementation(() => {
+  return {
+    {u: 'http://localhost:3000' m: 'GET' }
+  }
+});
+const Input = require('./lib/input');
+
+
+// how can we get valid dependecies inside of a test
+
+describe('Testing input module', () => {
+  it ('should have some input properties', () => {
+
+    const options = new Input();
+
+
+
+  });
+});
+
+
+```
