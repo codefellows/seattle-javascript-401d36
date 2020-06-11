@@ -1,0 +1,21 @@
+{
+  "name": "mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cf-supergoose": "^1.0.2",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.9.18",
+    "superagent": "^5.2.2"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
