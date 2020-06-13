@@ -179,19 +179,19 @@ function exponential(message) {
 - set that Next to a new Node containing the Value.
 
 ```java
-ALGORITHM add(Linkedlist, value)
+ALGORITHM add(LinkedList, value)
 
     VARIABLE current = LinkedList.Head
 
     WHILE current NOT EQUAL TO null
 
-      check(current.Value)
-      current = current.Next
-    <!-- here we can possibly add -->
+      // Before we move current to the Next property, check if it's there
       IF current.next EQUALs null
-        current.Next = new Node(value);
+        // If not add our Node
+        current.Next = new Node(value)
+        RETURN LinkedList
 
-    RETURN true;
+      current = current.Next
 ```
 
 ### JS Implementation
