@@ -1,0 +1,23 @@
+{
+  "categories": [
+    {
+      "name": "test",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "Test",
+      "category": "test",
+      "description": "coming from netlify",
+      "price": 1.99,
+      "id": 1
+    },
+    {
+      "name": "Potatoe",
+      "price": 5,
+      "description": "A pretty great potatoe",
+      "id": 2
+    }
+  ]
+}

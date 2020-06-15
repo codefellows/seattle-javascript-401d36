@@ -1,0 +1,19 @@
+{
+  "name": "json-server-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "json-server": "^0.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "json-server db.json --route routes.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
