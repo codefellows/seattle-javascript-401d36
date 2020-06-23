@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a id="oauth" href="#">Login</a>
+  <script>
+
+    let URL = "https://github.com/login/oauth/authorize";
+
+    let options = {
+      client_id: '7e267d7e181c8480f895',
+      redirect_uri: 'http://localhost:3000/oauth',
+      scope: 'read:user',
+      state: '401appconsent'
+    }
+
+    let QueryString = Object.keys(options).map(key => {
+      return `${key}=${encodeURIComponent(options[key])}`
+    }).join('&');
+
+    let authUrl = `${URL}?${QueryString}`;
+
+    let link = document.getElementById('oauth');
+    link.setAttribute('href', authUrl);
+  </script>
+</body>
+
+</html>
