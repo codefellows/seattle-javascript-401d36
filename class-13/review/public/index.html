@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a id="oauth" href="#">Login</a>
+  <script>
+
+    let URL = "https://www.amazon.com/ap/oa";
+
+    let options = {
+      client_id: 'amzn1.application-oa2-client.08370609fc2f4c6498eede68afe4a9f0',
+      redirect_uri: 'http://localhost:3000/oauth',
+      response_type: 'code',
+      scope: 'profile',
+      state: '401appconsent'
+    }
+
+    let QueryString = Object.keys(options).map(key => {
+      return `${key}=${encodeURIComponent(options[key])}`
+    }).join('&');
+
+    let authUrl = `${URL}?${QueryString}`;
+
+    let link = document.getElementById('oauth');
+    link.setAttribute('href', authUrl);
+  </script>
+</body>
+
+</html>
