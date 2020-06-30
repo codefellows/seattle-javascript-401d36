@@ -1,0 +1,30 @@
+{
+  "name": "caps",
+  "version": "1.0.0",
+  "description": "CAPS - Code Academy Parcel Service",
+  "main": "./lib/vendor.js",
+  "scripts": {
+    "start": "node ./lib/vendor.js",
+    "test": "jest --verbose",
+    "jsdoc": "jsdoc -c ./docs/configs/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-ashley-biermann/caps.git"
+  },
+  "keywords": [],
+  "author": "Ashley Biermann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-ashley-biermann/caps/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-ashley-biermann/caps#readme",
+  "dependencies": {
+    "cf-supergoose": "^1.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jest": "^26.1.0",
+    "jsdoc": "^3.6.4"
+  }
+}
