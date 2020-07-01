@@ -1,0 +1,25 @@
+{
+  "name": "CAPS",
+  "version": "1.0.0",
+  "description": "### Author: Paul Depew #### Acknowledgements:",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulDepew/CAPS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulDepew/CAPS/issues"
+  },
+  "homepage": "https://github.com/PaulDepew/CAPS#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "events": "^3.1.0",
+    "faker": "^4.1.0"
+  }
+}
