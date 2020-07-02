@@ -1,0 +1,16 @@
+{
+  "name": "jacob-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.1.0",
+    "socket.io-client": "^2.3.0"
+  }
+}
