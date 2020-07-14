@@ -88,6 +88,8 @@ class Thing extends React.Component {
 
 - Adding a deploy and pre-deploy script to our package.json
   - Make sure gh-pages is installed
+- Adding a homepage to your package.json
+  - You will need to add a line like this your you json: "homepage": "https://github-account.github.io/repo-name",
 - Getting an access token from github
   - Github > Profile Setting > Developer Settings > Personal Access Tokens
     - Click Generate new Token
