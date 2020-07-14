@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://jacobknaack.github.io/class27_deployment",
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
