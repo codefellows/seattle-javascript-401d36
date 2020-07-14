@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter tests renders correctly 1`] = `
+<div>
+  <form>
+    <button
+      id="increment"
+      onClick={[Function]}
+    >
+      Add +1
+    </button>
+  </form>
+  <p>
+    0
+    ;
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Clear
+  </button>
+</div>
+`;
