@@ -31,11 +31,13 @@ describe('testing Words', () => {
   it('displays proper state value', () => {
     let app = mount(<Words />);
     let viewButton = app.find('#view');
+    let displayElement = app.find('#word');
 
+    expect(displayElement.text()).toBe('');
     viewButton.simulate('click');
 
-    let displayElement = app.find('#word');
-    expect(displayElement.text().includes('current words')).toBe(true);
+    // expect(displayElement.text().includes('current words')).toBe(true);
+    expect(displayElement.text()).toEqual('current words');
   });
 });
 
