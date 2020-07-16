@@ -1,6 +1,7 @@
 # Class 12 Oauth
 
 ## Warmup
+
 - What is Authentication?
   - Checking to see if two things are supposed to be connected.
   - Allowing permissions ( authorization ).
@@ -15,10 +16,12 @@
     - signed with a secret string.
 
 ## Lab Review
+
 - Thanks Marlene :)
 - Paul: Dynamic routing
 
 ## Authorization as services
+
 - We know now that authentication is an invovled concious effort to pass data back and forth
   - between js and db and validation.
   - Maybe we dont' want to mess with any of that!
@@ -49,3 +52,4 @@
 
 
 ## Github Oauth
+- See demo folder

@@ -2,7 +2,7 @@
 
 ## Component Based UIs
 
-- think abou each element as part of a group of elements
+- Think about each element as part of a group of elements.
 - We want to think of our view as a single page / not concerned with loading new HTML.
   - Manipulate existing markup / content instead.
 
