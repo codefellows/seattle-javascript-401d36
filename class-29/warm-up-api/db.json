@@ -1,0 +1,22 @@
+{
+  "messages": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "author": "Group 1",
+      "text": "Test",
+      "date": "Thu Jul 16 2020",
+      "id": 3
+    },
+    {
+      "author": "Group 1",
+      "text": "we could send messages to a server!",
+      "date": "Thu Jul 16 2020",
+      "id": 4
+    }
+  ]
+}
