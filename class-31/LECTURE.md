@@ -15,6 +15,8 @@
     - Better Application Architecture.
   - One of the biggest mistakes that startups is jumping straight to React. A smaller templating libary would work just fine.
 
+![UML 1](./assets/group-2-uml.jpg) ![UML2](./assets/group-1-uml.jpg)
+
 ### React / Hashmap Review
 
 - What is React?
