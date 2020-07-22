@@ -9,15 +9,15 @@
 - Garhett: import a feature from react, and use it to do something.
 - Why do we use these?
 - Marlene: Saving time / consistency!
-    - Jacob: these trigger React lifecycle.
+    - Jacob: these trigger React lifecycle events.
         - When we use these, React is aware that changes are being made, and it can update other components to make sure our data is consistent over the entire tree ( DOM, where all our elements live together ).
 - Web Hook?
     - Ashley: something that performs something, in response to an some action.
-    -Jacob: Hooks API is very similar, it triggers a response to some action that came before it.
+    -Jacob: Hooks API is very similar, it triggers a response to some action that we specify.
 
-## useAxios Hook
+## useAjax Hook
 
-- see review
+- see [review](./review/src/hooks/useJax.js)
 
 ## React Context API
 
