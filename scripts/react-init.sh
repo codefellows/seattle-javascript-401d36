@@ -2,11 +2,11 @@
 
 if [ $1 ]
 then
+  echo "****8 \n   Creating project directory\n*****"
   mkdir $1
   cd $1
 else
-  echo "Please provide a name for your project"
-  exit 1
+  echo "***** \n    No directory specified, adding project files to CWD\n*****"
 fi
 
 npm init -y
