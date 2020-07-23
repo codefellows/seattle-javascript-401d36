@@ -68,3 +68,48 @@ const Todo = (props) => {
 
 export default Todo;
 ```
+
+- here is a vanilla javascript function, written with the same design pattern as our react hooks:
+  
+```js
+
+// how hooks
+
+// import { useState } from 'react';
+
+function useForm(cb) {
+
+  // const [ get, set ] = useState('');
+
+  function handleChange(value) {
+    console.log(value);
+  }
+
+  function handleSubmit(value) {
+    console.log(value);
+    cb();
+    //   cb(value);
+  }
+
+  return ['one', handleChange, handleSubmit];
+}
+
+const arrayOfThings = useForm('three');
+
+console.log(arrayOfThings) // ['one', 'two', 'three'];
+
+const log = () => console.log('three');
+// const func = useForm(() => console.log('three'));
+// const func = useForm(log);
+
+const [one, handleChange, handleSubmit] = useForm(log);
+// defined in the line above
+handleChange('some random value');
+handleSubmit();
+// console.log('here is anon', handleSubmit);
+// console.log(func) // => ['one', 'two', () => console.log('three')];
+
+// func[0] / func[1] / func[2]
+// func[2]() // => 'three'
+
+```
