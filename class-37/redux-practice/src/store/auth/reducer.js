@@ -1,7 +1,7 @@
 export default (state = {}, action) => {
     const { type, payload } = action;
 
-    switch(type) {
+    switch (type) {
         case 'LOGIN':
             return payload;
         case 'LOGOUT':
