@@ -1,4 +1,4 @@
-# LAB - Typescript Module
+# LAB - Full Stack with Typescript
 
 Create your first native typescript module using skills gained from a previously javascript projects. Over the course of the nest two days we will be building a small full stack application that can send chat messages back and forth to clients in real time.
 
