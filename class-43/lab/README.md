@@ -27,6 +27,11 @@ Over the next two day, you will create your first full stack Typescript App.  We
 
 ### Milestone 2 - React Interface
 
+- Build an interface that can connect to your socket server
+- Create a component that can display messages.
+- Your app must have the ability to emit and respond to server socket events.
+- Implement material UI components using the [documentation](https://material-ui.com/guides/typescript/) as a guideline for implementation.
+
 ### Documentation
 
 For this assignment, instead of writing developer documentation, write end user documentation.

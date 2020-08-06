@@ -151,3 +151,27 @@ Interface
 - team composition
   - 6 people vs 2 teams
     - Deligation of tasks?
+
+### Roll20: a dice game with multiple players?
+
+- Supertask??
+  - Connect 4 people to the same viewable station / dashboard / view!
+    - How do you join a game??
+      - Do you you need an invite?
+    - Who is the boss / game admin?
+    - Socket Stuff
+      - Socket.io
+      - Web Sockets?
+    - React components
+    - How Auth?
+    - DATA MODELLING!!!!!
+      - Users / Player
+      - Game??
+        - Rules??
+        - Board??
+        - Player??
+      - Table?
+  - Play a DnD game?
+  - Play a game via a template?
+- MVP
+  - 
