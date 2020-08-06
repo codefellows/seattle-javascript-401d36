@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Message App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+</head>
+
+<body>
+  <button onclick="sendMsg()">Send Message!!</button>
+  <ul id="messages"></ul>
+  <script>
+    const socket = io('http://localhost:3000');
+    const messagesEl = document.getElementById('messages');
+
+    const messagePayload = {
+      createdAt: new Date(),
+      text: 'hey from the front end',
+    }
+
+    function sendMsg() {
+      socket.emit('message', messagePayload);
+    }
+
+    socket.on('message', (messages) => {
+      const listItem = document.createElement('li');
+      listItem.textContent = messages[0].text;
+      messagesEl.append(listItem);
+    })
+  </script>
+</body>
+
+</html>
